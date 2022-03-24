@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "b419e115-b028-40d3-8a7c-fc46f22446d3",
+		"name": "troylab-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed sabry",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sabsab@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login?email=sabsab@mail.com&passowrd=12345678",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sabsab@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=sabsab@mail.com&passowrd=12345678",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "sabsab@mail.com"
+						},
+						{
+							"key": "passowrd",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/school",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/school",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/school",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "wezatyyy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/school",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/school/11",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "weza el wez",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/school/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/school/1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/school/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "khaled",
+							"type": "text"
+						},
+						{
+							"key": "school_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/11",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "school_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmQ3NTkxNzdlYTVmMDRlMjhhMWEzZDk2NWJhM2M1MzA3YThhMDY2YzZhZjU2Y2MxMGNlYzQxYjAxMzkzOTExY2IyNjFkOWVmZTVmYTA1NjEiLCJpYXQiOjE2NDgxMzAyNjEuOTc1NzY0LCJuYmYiOjE2NDgxMzAyNjEuOTc1NzcyLCJleHAiOjE2Nzk2NjYyNjEuOTY3NCwic3ViIjoiMSIsInNjb3BlcyI6W119.ByUn2RXI-_iLInYULDvOO_2ere7LTSMnfs1mUyWgXjf3S4oqAwsXUpwdzqI1S7Jh_mevbU17xs4_aBGSpWU13ZOP11HbVOHMzJsGnW4gUZufOzWfCzd24KSvQ8z3B32VIbUDDlCv9vaEFHdlnrStT-z8rH9Y0cMkJ3aF9thFd8RK02ZBqUS62TH-LWARectGkWvSmT3bNmG3oYbBQ7qJ_KOc2u7LnxTtEUTRLIWIH8VKNtMkxfPYqlSkyuRuNOis2RRDTlTMYRUlwQr7cWTq-EPFQe-08Dz4b_3K8ACQukpvKiXnzjEcJ2Llap4f5YEZyf1pIkpKmJP7xdPwZ0YDfikZnTx7crqPkYu9_mNISrAoXD6t6a9ADgns_PvR413StLPBr0rzLVNNzzZBBSULUCqNx1rwn5oYA2P8d3GScgTZ2Bi7gR9EFy0s4Zfxp-zX9DExZCPzNOnPoXWsNNrAzLCR9Js3R6NDmJNSyfaHuoyKyn5f2Zqjqt0Q4w1Yp3_H3w96KQ9txTHuC-VH6aM-PTj5tFtbihYFtD3FqRRtDXfROxujhxCtAbj0hHRRKTUwySTywkf97RYCp7sgwtIswwrW3j6gIwC0LjyNYWE4EJlIsdDoHvmp60pwy-AUrXdW_hE8j5LiIWhhHEXQ4S1yTV2SBocEnRWder2hEPKJ2ow",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
