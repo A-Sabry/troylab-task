@@ -20,31 +20,7 @@ project installation
     php artisan Students:reorder 
 
 
--------------------------------
-API
------------------------------- 
- User signup
-------------------------------
 
-- url : {domain}/api/register
-
-- method : post
-
-- parameters :email, password, name
-
-- return user name and token
-
--------------------------------------------
-
- User login
--------------------------------------------
-- url : {domain}/api/login
-
-- method : post
-
-- parameters :email, password
-
-- return user token
 
 
 
