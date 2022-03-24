@@ -18,6 +18,11 @@ project installation
 - to run command for recoder students
  
     php artisan Students:reorder 
+    
+    
+ notes
+ postman documentation collection troylab-task was added 
+    
 
 
 
